@@ -13,8 +13,7 @@
     width: 100vw;
     height: 100vh;
 }
-.top{
-    background-color: red;
+.top-flex{
     width: 1210px;
     height: 80px;
     left: 230px;
@@ -23,7 +22,44 @@
     z-index: 2;
     background-color: #0b0b0b;
     opacity: 0.5;
+    display: flex;
+    justify-content: flex-end;
 }
+.subscribe{
+    height:80px;
+    width: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+.subscribe button{
+    height: 30px;
+    width: 200px;
+    border-style: none;
+    border-radius: 5px;
+    border:1px solid #b3b3b3;
+    color: #b3b3b3;
+    background-color: transparent;
+}
+.subscribe button:hover{
+    color: #22c95c;
+    border:1px solid #22c95c;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .content{
     background-color: #121212;
     width: 1210px;
@@ -40,6 +76,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+
 }
 .logo{
     width: 230px;
@@ -61,15 +98,16 @@
 .side-flex button{
     width: 214px;
     height: 40px;
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-top:2px;
+    padding-bottom:2px;
     padding-left: 16px;
     padding-right: 16px;
     border-style: none;
     border-radius: 4px;
     color: #b3b3b3;
     background-color: #040404;
-
+    text-align: left;
+    font-size: 18px;
 }
 .side-flex button:hover{
     background-color: #282828;
@@ -95,7 +133,7 @@
     color: #b3b3b3;
 }
 .playlist span{
-    font-size: 18px;
+    font-size: 14px;
     color: #b3b3b3;
     padding-left: 23px;
     padding-top: 10px;
@@ -116,24 +154,44 @@
     font-size: 40px;
 }
 .crea span{
-    font-size: 18px;
+    font-size: 14px;
     padding-top:10px;
     padding-bottom:10px;
     color: #b3b3b3;
 }
 .side-flex ul li{
     padding-left: 23px;
-
+    font-size: 12px;
 }
-.side-flex ul li{
+.side-flex ul li {
     color: #b3b3b3;
     line-height: 30px;
-
+}
+.side-flex ul li span{
+    font-size: 12px;
 }
 .side-flex ul li :hover{
     color: #ffffff;
 }
+.account{
+    position: relative;
+    top: 25%;
+    width: 214px;
+    background-color: #040404;
+    padding: 5px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.account span, .account i{
+    font-size: 12px;
+}
 
+.divisore{
+    height: 2px;
+    background-color: white;
+    align-items: center;
+    width: 200px
+}
 
 
 
