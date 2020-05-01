@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
 .clearfix::after{
     content: '';
     display: table;
@@ -14,24 +15,18 @@
     height: 100vh;
 }
 .top-flex{
-    top: 0;
-    right: 0;
     height: 80px;
-    left: 230px;
     position: fixed;
-    z-index: 2;
     background-color: #0b0b0b;
     opacity: 0.5;
-    display: flex;
-    justify-content: flex-end;
+    width: 100vw;
+    z-index: 2;
 }
 .subscribe{
     height:80px;
     width: 250px;
     padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    justify-content: center;
+    float: right;
 }
 .subscribe button{
     height: 30px;
@@ -49,25 +44,59 @@
 }
 
 
+.boroboro{
+    width: 85%;
+    background-color: black;
+    position: relative;
+    left: 15%;
+    padding-right: 10px;
+    padding-top: 130px;
+}
+.fluid {
+  max-width: 85%;
+  height: 100%;
+  display: block;
 
+}
+.img-fluid {
+  max-width: 100%;
+  height: 100%;
+  display: block;
 
+}
 
+.griglia {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  /* background-color: black; */
 
+}
 
+.box {
+  width: 100%;
+  height: 400px;
+  /* background-color: orange; */
 
+}
 
+.box:hover {
+  cursor: pointer;
+
+}
 
 
 
 
 .content-flex{
     background-color: #121212;
-    top: 80px;
-    right: 0px;
-    bottom: 90px;
-    left: 230px;
-    z-index: 1;
+    width: 100%;
+    overflow-x: auto;
 }
+
 .rowslist{
     width: 100%;
     height: 40px;
@@ -155,7 +184,7 @@
     width: 100%;
     height: 15%;
     padding-left: 230px;
-    
+
 }
 .name h2{
     color: #ffffff;
@@ -176,66 +205,25 @@
     border-radius: 100%
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.aria{
+    width: 100%;
+    height: 1000px;
+}
 
 
 
 .side-flex{
     background-color: #040404;
-    width: 230px;
-    height: 100%;
+    width: 15%;
+    height: 100vh;
     float: left;
-    position: fixed;
     display: flex;
     flex-direction: column;
-
+    position: fixed;
+    z-index: 2;
+}
+.menu{
+    margin-bottom: 80px;
 }
 .logo{
     width: 230px;
@@ -248,14 +236,11 @@
     height: 40px;
     margin-left: 4px;
 }
-.menu{
-    align-self: center;
-}
 .menu:hover{
     color: #ffffff;
 }
 .side-flex button{
-    width: 214px;
+    width: 100%;
     height: 40px;
     padding-top:2px;
     padding-bottom:2px;
@@ -294,13 +279,14 @@
 .playlist span{
     font-size: 14px;
     color: #b3b3b3;
-    padding-left: 23px;
+    padding-left: 16px;
     padding-top: 10px;
     margin-top:10px;
 }
+
 .crea{
     align-self: center;
-    width: 214px;
+    width: 100%;
     height: 60px;
     background-color: #040404;
     padding-top:10px;
@@ -319,10 +305,8 @@
     color: #b3b3b3;
 }
 .side-flex ul li{
-    padding-left: 23px;
+    padding-left: 16px;
     font-size: 12px;
-}
-.side-flex ul li {
     color: #b3b3b3;
     line-height: 30px;
 }
@@ -333,13 +317,10 @@
     color: #ffffff;
 }
 .account{
-    position: relative;
-    top: 25%;
-    width: 214px;
+    height: 25px;
+    width: 100%;
     background-color: #040404;
     padding: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 .account span, .account i{
     font-size: 12px;
@@ -349,10 +330,8 @@
     height: 2px;
     background-color: white;
     align-items: center;
-    width: 200px
+    width: 90%;
 }
-
-
 
 
 
@@ -371,13 +350,13 @@
     background-color: #282828;
     width: 100%;
     height: 90px;
-    position: fixed;
-    top: 90vh;
     z-index: 2;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    bottom: 0;
 }
-.item{
+.itema{
     height:90px;
     width: 230px;
 
@@ -496,4 +475,35 @@
 .function i:hover{
     cursor: pointer;
     color: #ffffff;
+}
+
+
+
+
+@media screen and (max-height: 600px) {
+
+  .playlist span{
+      display: none;
+  }
+  .crea{
+      display: none;
+  }
+  .side-flex ul li{
+      display: none
+  }
+
+}
+@media screen and (max-width: 1260px) {
+    .side-flex button{
+        font-size: 0px;
+    }
+    .playlist span{
+        display: none;
+    }
+    .crea{
+        display: none;
+    }
+    .side-flex ul li{
+        display: none
+    }
 }
