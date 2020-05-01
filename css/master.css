@@ -223,17 +223,19 @@
     z-index: 2;
 }
 .menu{
-    margin-bottom: 80px;
+    margin-bottom: 110px;
+}
+.ultimo{
+    margin-bottom: 10px;
 }
 .logo{
-    width: 230px;
-    height: 80px;
+    width: 30%;
     padding-top: 10px;
     padding-left: 10px;
 }
 .side-flex img{
-    width: 130px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     margin-left: 4px;
 }
 .menu:hover{
@@ -251,7 +253,7 @@
     color: #b3b3b3;
     background-color: #040404;
     text-align: left;
-    font-size: 18px;
+    font-size: 90%;
 }
 .side-flex button:hover{
     background-color: #282828;
@@ -296,11 +298,11 @@
 }
 .crea i{
     color: #b3b3b3;
-    font-size: 40px;
+    width: 10px
 }
 .crea span{
-    font-size: 14px;
-    padding-top:10px;
+    font-size: 80%;
+
     padding-bottom:10px;
     color: #b3b3b3;
 }
@@ -311,7 +313,7 @@
     line-height: 30px;
 }
 .side-flex ul li span{
-    font-size: 12px;
+    font-size: 80%;
 }
 .side-flex ul li :hover{
     color: #ffffff;
@@ -491,11 +493,34 @@
   .side-flex ul li{
       display: none
   }
+  .side-flex button{
+      font-size: 0;
+  }
+  .playlist span{
+      display: none;
+  }
+  .crea{
+      display: none;
+  }
+  .side-flex ul li{
+      display: none
+  }
 
 }
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 800px) {
+    .side-flex{
+        align-items: center;
+    }
+    .side-flex img{
+        width: 50%;
+    }
     .side-flex button{
-        font-size: 0px;
+        font-size: 0;
+    }
+    .side-flex button i{
+        position: relative;
+        left: 30%;
+        width: 60%
     }
     .playlist span{
         display: none;
@@ -506,4 +531,33 @@
     .side-flex ul li{
         display: none
     }
+    .account span{
+        font-size: 0;
+    }
+    .account{
+        display: none;
+    }
+    .divisore{
+        display: none;
+    }
+    .side-flex img{
+        display: none;
+    }
+    .production i,
+    .function,
+    .bartwo{
+        display: none;
+    }
+    .itema.center .row .time{
+        display: none;
+    }
+    .itema.center .row .bartime{
+        display: none;
+    }
+    .itema.center .row i{
+        position: relative;
+        top: 20px;
+        font-size: 20px;
+    }
+
 }
