@@ -4,16 +4,14 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
 .clearfix::after{
     content: '';
     display: table;
     clear: both;
 }
-.container {
-    width: 100vw;
-    height: 100vh;
-}
+
+
+/* TOPBAR */
 .top-flex{
     height: 80px;
     position: fixed;
@@ -33,18 +31,23 @@
     width: 200px;
     border-style: none;
     border-radius: 5px;
-    border:1px solid #b3b3b3;
+    border:2px solid #b3b3b3;
     color: #b3b3b3;
     background-color: transparent;
 }
 .subscribe button:hover{
     color: #22c95c;
-    border:1px solid #22c95c;
+    border:2px solid #22c95c;
     cursor: pointer;
 }
 
 
-.boroboro{
+/* container principale */
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+.boxprincipale{
     width: 85%;
     background-color: black;
     position: relative;
@@ -56,15 +59,12 @@
   max-width: 85%;
   height: 100%;
   display: block;
-
 }
 .img-fluid {
   max-width: 100%;
   height: 100%;
   display: block;
-
 }
-
 .griglia {
   width: 100%;
   height: 300px;
@@ -72,146 +72,23 @@
   justify-content: center;
   align-items: center;
   padding-top: 80px;
-  /* background-color: black; */
-
 }
-
 .box {
   width: 100%;
   height: 400px;
-  /* background-color: orange; */
-
 }
-
 .box:hover {
   cursor: pointer;
 
 }
-
-
-
-
 .content-flex{
     background-color: #121212;
     width: 100%;
     overflow-x: auto;
 }
 
-.rowslist{
-    width: 100%;
-    height: 40px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-.rowslist ul{
-    list-style: none;
-
-}
-.rowslist ul li{
-    list-style: none;
-    float:left;
-
-}
-.rowslist ul li a{
-    margin-right: 10px;
-    margin-left: 10px;
-    color:  #b3b3b3;
-    text-decoration: none;
-}
-.rowslist ul li a:hover{
-    color:  #ffffff;
-    text-decoration: underline;
-    text-decoration-color: #1ed760;
-}
-.rows{
-    width: 100%;
-    height: 230px;
-    margin-bottom: 15px;
-
-}
-.name{
-    width: 100%;
-    height: 15%;
-
-}
-.name h2{
-    color: #ffffff;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-.album{
-    width: 100%;
-    height: 85%;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 230px;
-
-}
-.card{
-    width: 197px;
-    height: 100%;
-}
-.fotoalbum{
-    width: 100%;
-    height: 90%;
-    margin-left: 15px;
-    margin-bottom: 5px;
-
-}
-.fotoalbum img{
-    align-self: center;
-    width: 85%;
-    height: 100%;
-}
-.text{
-    width: 100%;
-    height: 15%;
-
-}
-.textcard{
-    height:100%;
-    text-align: center;
-}
-.textcard p{
-    font-size: 10px;
-    color: #ffffff;
-}
-/* seconda row */
-.name{
-    width: 100%;
-    height: 15%;
-    padding-left: 230px;
-
-}
-.name h2{
-    color: #ffffff;
-}
-.information{
-    width: 100%;
-    height: 15%;
-    padding-left: 230px;
-}
-.information p{
-    color:  #b3b3b3;
-    margin-left: 15px;
-
-}
-/* terza row */
-
-.rotondo img{
-    border-radius: 100%
-}
-
-.aria{
-    width: 100%;
-    height: 1000px;
-}
-
-
-
+/* SIDE-BAR */
 .side-flex{
     background-color: #040404;
     width: 15%;
@@ -244,7 +121,7 @@
 .side-flex button{
     width: 100%;
     height: 40px;
-    padding-top:2px;
+    padding-top:2 16 2 16;
     padding-bottom:2px;
     padding-left: 16px;
     padding-right: 16px;
@@ -260,33 +137,27 @@
     cursor: pointer;
     color: #ffffff;
 }
-.menu button span:hover{
+.menu button span:hover,
+.side-flex i:hover {
     color: #ffffff;
 }
-.side-flex i:hover{
-    color: #ffffff;
-}
-.side-flex span{
+.side-flex span,
+.side-flex i {
     float: left;
     font-size: 18px;
     color: #b3b3b3;
 }
-
-.side-flex i{
-    float: left;
-    font-size: 20px;
+.side-flex i {
     margin-right: 16px;
-    color: #b3b3b3;
 }
-.playlist span{
+.playlist span {
     font-size: 14px;
     color: #b3b3b3;
     padding-left: 16px;
     padding-top: 10px;
     margin-top:10px;
 }
-
-.crea{
+.crea {
     align-self: center;
     width: 100%;
     height: 60px;
@@ -302,7 +173,6 @@
 }
 .crea span{
     font-size: 80%;
-
     padding-bottom:10px;
     color: #b3b3b3;
 }
@@ -324,10 +194,10 @@
     background-color: #040404;
     padding: 5px;
 }
-.account span, .account i{
+.account span,
+.account i{
     font-size: 12px;
 }
-
 .divisore{
     height: 2px;
     background-color: white;
@@ -335,19 +205,7 @@
     width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* BOTTOM-BAR */
 .foot-flex{
     background-color: #282828;
     width: 100%;
@@ -361,7 +219,6 @@
 .itema{
     height:90px;
     width: 230px;
-
 }
 .production{
     width: 33.33%;
@@ -399,7 +256,6 @@
     cursor: pointer;
     color: #ffffff;
 }
-
 .center{
     width: 500px;
     display: flex;
@@ -436,7 +292,6 @@
     color: #b3b3b3;
     align-self: center;
 }
-
 .bar{
     width: 80%;
     height: 100%;
@@ -458,7 +313,6 @@
     height: 100%;
     width: 40%;
     display: flex;
-
 }
 .bartwo{
     height: 100%;
@@ -480,7 +334,7 @@
 }
 
 
-
+/* RESPONSIVE */
 
 @media screen and (max-height: 600px) {
 
