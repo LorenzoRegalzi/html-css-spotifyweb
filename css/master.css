@@ -9,7 +9,11 @@
     display: table;
     clear: both;
 }
-
+.helia{
+    color: white;
+    width: 200px;
+    text-align: center;
+}
 
 /* TOPBAR */
 .top-flex{
@@ -46,6 +50,11 @@
 .container {
     width: 100vw;
     height: 100vh;
+}
+h1 {
+    position: relative;
+    color:white;
+    bottom: 15px;
 }
 .boxprincipale{
     width: 85%;
@@ -104,6 +113,9 @@
 }
 .ultimo{
     margin-bottom: 10px;
+    position: relative;
+    bottom: 11px;
+    top: 100px;
 }
 .logo{
     width: 30%;
